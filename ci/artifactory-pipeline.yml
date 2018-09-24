@@ -116,7 +116,7 @@ jobs:
   - put: deploy-test-app
     params:
       manifest: git-repo/manifest-test.yml
-      current_app_name: brian-spring-music-test
+      current_app_name: s1p-12-spring-music-test
       path: release-candidate/spring-music*.jar
   - task: verify
     file: git-repo/ci/tasks/verify-test.yml
@@ -137,7 +137,7 @@ jobs:
   - put: deploy-uat-app
     params:
       manifest: git-repo/manifest-uat.yml
-      current_app_name: brian-spring-music-uat
+      current_app_name: s1p-12-spring-music-uat
       path: release-candidate/spring-music*.jar
 
 - name: ship-it
@@ -163,7 +163,7 @@ jobs:
   - put: deploy-production-app
     params:
       manifest: git-repo/manifest-prod.yml
-      current_app_name: brian-spring-music
+      current_app_name: s1p-12-spring-music
       path: final-dir/spring-music*.jar
 
 #TODO - Make BLUE/GREEN work with Artifactory
