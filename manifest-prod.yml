@@ -1,5 +1,5 @@
 ---
 applications:
-- name: brian-spring-music
+- name: s1p-12-spring-music
   memory: 1G
   buildpack: java_buildpack
