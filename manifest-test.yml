@@ -1,5 +1,6 @@
 ---
 applications:
-- name: s1p-12-spring-music-test
+- name: spring-music-test
   memory: 1G
   buildpack: java_buildpack
+  host: s1p-12-spring-music
